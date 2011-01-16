@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=fprint
+GenericName=Fingerprint demo program
+GenericName[fr]=Logiciel de démonstration de reconnaissances des empreintes digitales
+Comment=Demonstration software for the fingerprint recognition program fprint
+Comment[fr]=Logiciel de démonstration pour le programme de reconnaissance d'empreinte digitale fprint
+Exec=fprint_demo
+Icon=fprint-icon
+Terminal=false
+Type=Application
+Categories=Utility;X-Fedora;
