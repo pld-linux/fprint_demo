@@ -6,6 +6,7 @@ License:	GPL v2
 Group:		Base
 URL:		http://www.reactivated.net/fprint/wiki/Main_Page
 Source0:	http://downloads.sourceforge.net/fprint/%{name}-%{version}.tar.bz2
+# Source0-md5:	32e663a938e19801bdd17105d5c4d310
 Source1:	%{name}.desktop
 Source2:	fprint-icon.png
 BuildRequires:	gtk+2-devel
