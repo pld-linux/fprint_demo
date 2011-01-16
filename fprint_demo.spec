@@ -10,11 +10,13 @@ Source1:	%{name}.desktop
 Source2:	fprint-icon.png
 BuildRequires:	gtk+2-devel
 BuildRequires:	libfprint-devel
+BuildRequires:	rpmbuild(macros) >= 1.198
+Requires:	desktop-file-utils
 ExcludeArch:	s390 s390x
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Graphical tool to demonstrate how works for the fprint drivers
+Graphical tool to demonstrate how works for the fprint drivers.
 
 %prep
 %setup -q
@@ -34,6 +36,12 @@ cp -a %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%update_desktop_database_post
+
+%postun
+%update_desktop_database_postun
 
 %files
 %defattr(644,root,root,755)
